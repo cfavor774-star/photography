@@ -211,3 +211,8 @@ body.lb-open { overflow: hidden; }
 @media (max-width: 600px) {
   .grid[data-view="people"] { grid-template-columns: 1fr; max-width: 420px; }
 }
+
+/* ---------- Minimal gallery ---------- */
+.gallery-section .filters { margin-top: 0; }
+.tile { margin-bottom: 1.6rem; }
+.grid[data-view="people"] { gap: 1.6rem; }

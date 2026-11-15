@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
   <a class="skip-link" href="#gallery">Skip to the photos</a>
@@ -26,7 +26,7 @@
 
   <!-- ========== HERO (the first full screen) ========== -->
   <section class="hero" aria-label="Welcome">
-    <img class="hero-img" src="images/hero.jpg?v=3" data-placeholder="images/placeholders/hero.svg" alt="A soft, glowing scene photographed by Chidinma">
+    <img class="hero-img" src="images/hero.jpg?v=4" alt="Orange sunset over the river and city skyline">
     <div class="hero-veil" aria-hidden="true"></div>
     <div class="hero-text">
       <p class="eyebrow">Photography by Chidinma · Ottawa</p>
@@ -38,11 +38,7 @@
 
   <main>
     <!-- ========== GALLERY ========== -->
-    <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
-      <div class="section-head reveal">
-        <p class="eyebrow">The work</p>
-        <h2 id="gallery-title">What I’ve been seeing</h2>
-      </div>
+    <section class="gallery-section" id="gallery" aria-label="Gallery">
 
       <div class="filters reveal" role="group" aria-label="Filter photos">
         <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All</button>
@@ -54,94 +50,79 @@
       <!-- Each <figure> is one photo. Change the title, place and alt text right here. -->
       <div class="grid" id="grid">
         <figure class="tile reveal" data-category="places">
-          <button class="tile-btn" type="button" aria-label="Open photo: A timeless frame">
-            <img src="images/places-01.jpg?v=3" data-placeholder="images/placeholders/places-01.svg" alt="Black-and-white photo of an ornate Victorian pavilion with a lantern roof, framed by tree branches, on Parliament Hill" loading="lazy">
+          <button class="tile-btn" type="button" aria-label="Open photo">
+            <img src="images/places-01.jpg?v=4" alt="Black-and-white photo of an ornate Victorian pavilion with a lantern roof, framed by tree branches, on Parliament Hill" loading="lazy">
           </button>
-          <figcaption><span class="cap-title">A timeless frame</span><span class="cap-meta">Parliament Hill, Ottawa</span></figcaption>
         </figure>
         <figure class="tile reveal" data-category="people">
-          <button class="tile-btn" type="button" aria-label="Open photo: Up close">
-            <img src="images/people-01.jpg?v=3" data-placeholder="images/placeholders/people-01.svg" alt="Close-up self-portrait of Chidinma with long dark hair, evergreens behind her" loading="lazy">
+          <button class="tile-btn" type="button" aria-label="Open photo">
+            <img src="images/people-01.jpg?v=4" alt="Close-up self-portrait of Chidinma with long dark hair, evergreens behind her" loading="lazy">
           </button>
-          <figcaption><span class="cap-title">Up close</span><span class="cap-meta">Self-portrait</span></figcaption>
         </figure>
         <figure class="tile reveal" data-category="friends">
-          <button class="tile-btn" type="button" aria-label="Open photo: Throwing leaves">
-            <img src="images/friends-01.jpg?v=3" data-placeholder="images/placeholders/friends-01.svg" alt="Woman with braids laughing as she tosses autumn leaves in the air" loading="lazy">
+          <button class="tile-btn" type="button" aria-label="Open photo">
+            <img src="images/friends-01.jpg?v=4" alt="Woman with braids laughing as she tosses autumn leaves in the air" loading="lazy">
           </button>
-          <figcaption><span class="cap-title">Throwing leaves</span><span class="cap-meta">Autumn</span></figcaption>
         </figure>
         <figure class="tile reveal" data-category="places">
-          <button class="tile-btn" type="button" aria-label="Open photo: Lily in full bloom">
-            <img src="images/places-02.jpg?v=3" data-placeholder="images/placeholders/places-02.svg" alt="Close-up of a bright orange lily against green grass" loading="lazy">
+          <button class="tile-btn" type="button" aria-label="Open photo">
+            <img src="images/places-02.jpg?v=4" alt="Close-up of a bright orange lily against green grass" loading="lazy">
           </button>
-          <figcaption><span class="cap-title">Lily in full bloom</span><span class="cap-meta">Summer garden</span></figcaption>
         </figure>
         <figure class="tile reveal" data-category="people">
-          <button class="tile-btn" type="button" aria-label="Open photo: Peeking through petals">
-            <img src="images/people-02.jpg?v=3" data-placeholder="images/placeholders/people-02.svg" alt="Woman smiling from behind tall yellow tulips under a bright blue sky" loading="lazy">
+          <button class="tile-btn" type="button" aria-label="Open photo">
+            <img src="images/people-02.jpg?v=4" alt="Woman smiling from behind tall yellow tulips under a bright blue sky" loading="lazy">
           </button>
-          <figcaption><span class="cap-title">Peeking through petals</span><span class="cap-meta">Me, under a blue sky</span></figcaption>
         </figure>
         <figure class="tile reveal" data-category="friends">
-          <button class="tile-btn" type="button" aria-label="Open photo: Cap and attitude">
-            <img src="images/friends-02.jpg?v=3" data-placeholder="images/placeholders/friends-02.svg" alt="Woman in a black leather cap and teal top against autumn trees" loading="lazy">
+          <button class="tile-btn" type="button" aria-label="Open photo">
+            <img src="images/friends-02.jpg?v=4" alt="Woman in a black leather cap and teal top against autumn trees" loading="lazy">
           </button>
-          <figcaption><span class="cap-title">Cap and attitude</span><span class="cap-meta">Autumn colours</span></figcaption>
         </figure>
         <figure class="tile reveal" data-category="places">
-          <button class="tile-btn" type="button" aria-label="Open photo: A riot of tulips">
-            <img src="images/places-03.jpg?v=3" data-placeholder="images/placeholders/places-03.svg" alt="Dense bed of red and yellow tulips in sunlight" loading="lazy">
+          <button class="tile-btn" type="button" aria-label="Open photo">
+            <img src="images/places-03.jpg?v=4" alt="Dense bed of red and yellow tulips in sunlight" loading="lazy">
           </button>
-          <figcaption><span class="cap-title">A riot of tulips</span><span class="cap-meta">Tulip season</span></figcaption>
         </figure>
         <figure class="tile reveal" data-category="people">
-          <button class="tile-btn" type="button" aria-label="Open photo: Still, in black and white">
-            <img src="images/people-03.jpg?v=3" data-placeholder="images/placeholders/people-03.svg" alt="Black-and-white close-up self-portrait with long dark hair, evergreens behind" loading="lazy">
+          <button class="tile-btn" type="button" aria-label="Open photo">
+            <img src="images/people-03.jpg?v=4" alt="Black-and-white close-up self-portrait with long dark hair, evergreens behind" loading="lazy">
           </button>
-          <figcaption><span class="cap-title">Still, in black and white</span><span class="cap-meta">Self-portrait</span></figcaption>
         </figure>
         <figure class="tile reveal" data-category="friends">
-          <button class="tile-btn" type="button" aria-label="Open photo: Making a heart">
-            <img src="images/friends-03.jpg?v=3" data-placeholder="images/placeholders/friends-03.svg" alt="Woman in a teal top making a heart with her hands" loading="lazy">
+          <button class="tile-btn" type="button" aria-label="Open photo">
+            <img src="images/friends-03.jpg?v=4" alt="Woman in a teal top making a heart with her hands" loading="lazy">
           </button>
-          <figcaption><span class="cap-title">Making a heart</span><span class="cap-meta">A sunny afternoon</span></figcaption>
         </figure>
         <figure class="tile reveal" data-category="places">
-          <button class="tile-btn" type="button" aria-label="Open photo: Sunset over the river">
-            <img src="images/places-04.jpg?v=3" data-placeholder="images/placeholders/places-04.svg" alt="Orange sunset sky over a calm river and city skyline" loading="lazy">
+          <button class="tile-btn" type="button" aria-label="Open photo">
+            <img src="images/places-04.jpg?v=4" alt="Orange sunset sky over a calm river and city skyline" loading="lazy">
           </button>
-          <figcaption><span class="cap-title">Sunset over the river</span><span class="cap-meta">Evening</span></figcaption>
         </figure>
         <figure class="tile reveal" data-category="people">
-          <button class="tile-btn" type="button" aria-label="Open photo: Festival afternoon">
-            <img src="images/people-04.jpg?v=3" data-placeholder="images/placeholders/people-04.svg" alt="Woman in a white top and jeans smiling on the grass at an outdoor festival" loading="lazy">
+          <button class="tile-btn" type="button" aria-label="Open photo">
+            <img src="images/people-04.jpg?v=4" alt="Woman in a white top and jeans smiling on the grass at an outdoor festival" loading="lazy">
           </button>
-          <figcaption><span class="cap-title">Festival afternoon</span><span class="cap-meta">Mooney’s Bay Beach, Ottawa</span></figcaption>
         </figure>
         <figure class="tile reveal" data-category="friends">
-          <button class="tile-btn" type="button" aria-label="Open photo: All smiles">
-            <img src="images/friends-04.jpg?v=3" data-placeholder="images/placeholders/friends-04.svg" alt="Woman with braids smiling while crouched in fallen leaves" loading="lazy">
+          <button class="tile-btn" type="button" aria-label="Open photo">
+            <img src="images/friends-04.jpg?v=4" alt="Woman with braids smiling while crouched in fallen leaves" loading="lazy">
           </button>
-          <figcaption><span class="cap-title">All smiles</span><span class="cap-meta">In the leaves</span></figcaption>
         </figure>
         <figure class="tile reveal" data-category="places">
-          <button class="tile-btn" type="button" aria-label="Open photo: Stone and lamplight">
-            <img src="images/places-05.jpg?v=3" data-placeholder="images/placeholders/places-05.svg" alt="Black-and-white photo of a Parliament Hill building beside a street lamp" loading="lazy">
+          <button class="tile-btn" type="button" aria-label="Open photo">
+            <img src="images/places-05.jpg?v=4" alt="Black-and-white photo of a Parliament Hill building beside a street lamp" loading="lazy">
           </button>
-          <figcaption><span class="cap-title">Stone and lamplight</span><span class="cap-meta">Parliament Hill, Ottawa</span></figcaption>
         </figure>
         <figure class="tile reveal" data-category="people">
-          <button class="tile-btn" type="button" aria-label="Open photo: Looking ahead">
-            <img src="images/people-05.jpg?v=3" data-placeholder="images/placeholders/people-05.svg" alt="Man in a cream henley and cap looking off to the side in warm light" loading="lazy">
+          <button class="tile-btn" type="button" aria-label="Open photo">
+            <img src="images/people-05.jpg?v=4" alt="Man in a cream henley and cap looking off to the side in warm light" loading="lazy">
           </button>
-          <figcaption><span class="cap-title">Looking ahead</span><span class="cap-meta">Golden hour</span></figcaption>
         </figure>
         <figure class="tile reveal" data-category="friends">
-          <button class="tile-btn" type="button" aria-label="Open photo: In black and white">
-            <img src="images/friends-05.jpg?v=3" data-placeholder="images/placeholders/friends-05.svg" alt="Black-and-white photo of a woman at an outdoor festival" loading="lazy">
+          <button class="tile-btn" type="button" aria-label="Open photo">
+            <img src="images/friends-05.jpg?v=4" alt="Black-and-white photo of a woman at an outdoor festival" loading="lazy">
           </button>
-          <figcaption><span class="cap-title">In black and white</span><span class="cap-meta">Mooney’s Bay Beach, Ottawa</span></figcaption>
         </figure>
       </div>
     </section>
@@ -149,7 +130,7 @@
     <!-- ========== ABOUT ========== -->
     <section class="about" id="about" aria-labelledby="about-title">
       <div class="about-photo reveal">
-        <img src="images/about.jpg?v=3" data-placeholder="images/placeholders/about.svg" alt="Chidinma sitting among pink and purple tulips in a white tee" loading="lazy">
+        <img src="images/about.jpg?v=4" alt="Chidinma sitting among pink and purple tulips in a white tee" loading="lazy">
       </div>
       <div class="about-text reveal">
         <p class="eyebrow">About</p>
@@ -157,7 +138,6 @@
         <p class="lead">I’m new to photography, and honestly, that’s part of the magic.</p>
         <p>I started picking up a camera because I kept noticing things I didn’t want to forget: the way light falls on an ordinary street, the half-second before a friend bursts out laughing, a stranger’s face in a quiet moment.</p>
         <p>I photograph places, people, and the friends who make my life feel full. I’m based in Ottawa, still learning every single day, and chasing the moments that matter, the small, soft ones most people walk past.</p>
-        <p class="about-photo-note">Pictured: me, among the tulips.</p>
         <p class="signature">— Chidinma <span>(@takenbyfave)</span></p>
       </div>
     </section>
@@ -209,6 +189,6 @@
     <button class="lb-next" type="button" aria-label="Next photo">›</button>
   </div>
 
-  <script src="js/main.js?v=3"></script>
+  <script src="js/main.js?v=4"></script>
 </body>
 </html>

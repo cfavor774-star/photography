@@ -64,8 +64,8 @@
     var set = function () {
       lbImg.src = img.currentSrc || img.src;
       lbImg.alt = img.alt;
-      lbTitle.textContent = t.querySelector(".cap-title").textContent;
-      lbMeta.textContent = t.querySelector(".cap-meta").textContent;
+      lbTitle.textContent = "";
+      lbMeta.textContent = "";
       lbCount.textContent = (current + 1) + " / " + list.length;
       lbImg.classList.remove("is-swapping");
     };
