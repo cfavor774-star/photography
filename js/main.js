@@ -37,6 +37,7 @@
   filters.forEach(function (btn) {
     btn.addEventListener("click", function () {
       var f = btn.getAttribute("data-filter");
+      var g = document.getElementById("grid"); if (g) g.setAttribute("data-view", f);
       filters.forEach(function (b) { var on = b === btn; b.classList.toggle("is-active", on); b.setAttribute("aria-pressed", on); });
       tiles.forEach(function (t) {
         var show = f === "all" || t.getAttribute("data-category") === f;

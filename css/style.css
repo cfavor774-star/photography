@@ -198,3 +198,16 @@ body.lb-open { overflow: hidden; }
 .about-photo img { outline: 1px solid rgba(229,43,80,.35); outline-offset: 10px; }
 .contact-form input:focus, .contact-form textarea:focus { box-shadow: 0 0 0 3px rgba(229,43,80,.15); }
 .signature { color: var(--amaranth-deep) !important; }
+
+/* ---------- Portrait polish ---------- */
+.tile[data-category="people"] .tile-btn { border-radius: 200px 200px 4px 4px; box-shadow: 0 26px 50px -30px rgba(159,29,53,.55); }
+.tile[data-category="people"] img { aspect-ratio: 4/5; object-fit: cover; object-position: 50% 28%; }
+.tile[data-category="people"] figcaption { justify-content: center; flex-direction: column; align-items: center; text-align: center; gap: .2rem; padding-top: 1rem; }
+.tile[data-category="people"] .cap-meta { text-align: center; color: var(--amaranth-deep); }
+.grid[data-view="people"] { columns: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2.4rem 2rem; max-width: 1100px; }
+.grid[data-view="people"] .tile { margin: 0; }
+.about-photo img { object-position: 50% 30%; }
+.about-photo-note { font-size: .78rem; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-soft); margin-top: 1.4rem; }
+@media (max-width: 600px) {
+  .grid[data-view="people"] { grid-template-columns: 1fr; max-width: 420px; }
+}
