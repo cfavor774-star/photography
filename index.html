@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chidinma — Photography</title>
+  <meta name="description" content="Photographs of places, people and friends by Chidinma (@takenbyfave), Ottawa, Canada.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#gallery">Skip to the photos</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ========== TOP NAVIGATION ========== -->
+  <header class="nav" id="top">
+    <a class="brand" href="#top">Chidinma</a>
+    <nav aria-label="Main">
+      <a href="#gallery">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ========== HERO (the first full screen) ========== -->
+  <section class="hero" aria-label="Welcome">
+    <img class="hero-img" src="images/hero.jpg" data-placeholder="images/placeholders/hero.svg" alt="A soft, glowing scene photographed by Chidinma">
+    <div class="hero-veil" aria-hidden="true"></div>
+    <div class="hero-text">
+      <p class="eyebrow">Photography by Chidinma · Ottawa</p>
+      <h1>Small moments,<br><em>held a little longer.</em></h1>
+      <p class="hero-sub">Places that stayed with me, people I couldn’t forget, and friends I never want to.</p>
+      <a class="hero-cta" href="#gallery">Step inside <span aria-hidden="true">↓</span></a>
+    </div>
+  </section>
+
+  <main>
+    <!-- ========== GALLERY ========== -->
+    <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-head reveal">
+        <p class="eyebrow">The work</p>
+        <h2 id="gallery-title">What I’ve been seeing</h2>
+      </div>
+
+      <div class="filters reveal" role="group" aria-label="Filter photos">
+        <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="filter" data-filter="places" aria-pressed="false">Places</button>
+        <button type="button" class="filter" data-filter="people" aria-pressed="false">People</button>
+        <button type="button" class="filter" data-filter="friends" aria-pressed="false">Friends</button>
+      </div>
+
+      <!-- Each <figure> is one photo. Change the title, place and alt text right here. -->
+      <div class="grid" id="grid">
+        <figure class="tile reveal" data-category="places">
+          <button class="tile-btn" type="button" aria-label="Open photo: A timeless frame">
+            <img src="images/places-01.jpg" data-placeholder="images/placeholders/places-01.svg" alt="Black-and-white photo of an ornate Victorian pavilion with a lantern roof, framed by tree branches, on Parliament Hill" loading="lazy">
+          </button>
+          <figcaption><span class="cap-title">A timeless frame</span><span class="cap-meta">Parliament Hill, Ottawa</span></figcaption>
+        </figure>
+        <figure class="tile reveal" data-category="people">
+          <button class="tile-btn" type="button" aria-label="Open photo: Among the tulips">
+            <img src="images/people-01.jpg" data-placeholder="images/placeholders/people-01.svg" alt="Woman in a white tee sitting in a field of pink and purple tulips" loading="lazy">
+          </button>
+          <figcaption><span class="cap-title">Among the tulips</span><span class="cap-meta">Tulip field, spring</span></figcaption>
+        </figure>
+        <figure class="tile reveal" data-category="friends">
+          <button class="tile-btn" type="button" aria-label="Open photo: Laughing too loud">
+            <img src="images/friends-01.jpg" data-placeholder="images/placeholders/friends-01.svg" alt="Friends laughing together outdoors" loading="lazy">
+          </button>
+          <figcaption><span class="cap-title">Laughing too loud</span><span class="cap-meta">Saturday with the girls</span></figcaption>
+        </figure>
+        <figure class="tile reveal" data-category="places">
+          <button class="tile-btn" type="button" aria-label="Open photo: Lily in full bloom">
+            <img src="images/places-02.jpg" data-placeholder="images/placeholders/places-02.svg" alt="Close-up of a bright orange lily against green grass" loading="lazy">
+          </button>
+          <figcaption><span class="cap-title">Lily in full bloom</span><span class="cap-meta">Summer garden</span></figcaption>
+        </figure>
+        <figure class="tile reveal" data-category="people">
+          <button class="tile-btn" type="button" aria-label="Open photo: Peeking through petals">
+            <img src="images/people-02.jpg" data-placeholder="images/placeholders/people-02.svg" alt="Woman smiling from behind tall yellow tulips under a bright blue sky" loading="lazy">
+          </button>
+          <figcaption><span class="cap-title">Peeking through petals</span><span class="cap-meta">Under a blue sky</span></figcaption>
+        </figure>
+        <figure class="tile reveal" data-category="friends">
+          <button class="tile-btn" type="button" aria-label="Open photo: The walk home">
+            <img src="images/friends-02.jpg" data-placeholder="images/placeholders/friends-02.svg" alt="Two friends walking arm in arm at dusk" loading="lazy">
+          </button>
+          <figcaption><span class="cap-title">The walk home</span><span class="cap-meta">After the show</span></figcaption>
+        </figure>
+        <figure class="tile reveal" data-category="places">
+          <button class="tile-btn" type="button" aria-label="Open photo: A riot of tulips">
+            <img src="images/places-03.jpg" data-placeholder="images/placeholders/places-03.svg" alt="Dense bed of red and yellow tulips in sunlight" loading="lazy">
+          </button>
+          <figcaption><span class="cap-title">A riot of tulips</span><span class="cap-meta">Tulip season</span></figcaption>
+        </figure>
+        <figure class="tile reveal" data-category="people">
+          <button class="tile-btn" type="button" aria-label="Open photo: Still, in black and white">
+            <img src="images/people-03.jpg" data-placeholder="images/placeholders/people-03.svg" alt="Black-and-white close-up self-portrait with long dark hair, evergreens behind" loading="lazy">
+          </button>
+          <figcaption><span class="cap-title">Still, in black and white</span><span class="cap-meta">Self-portrait</span></figcaption>
+        </figure>
+        <figure class="tile reveal" data-category="friends">
+          <button class="tile-btn" type="button" aria-label="Open photo: Picnic blankets and cherries">
+            <img src="images/friends-03.jpg" data-placeholder="images/placeholders/friends-03.svg" alt="Friends sharing food on a picnic blanket" loading="lazy">
+          </button>
+          <figcaption><span class="cap-title">Picnic blankets and cherries</span><span class="cap-meta">Summer in the park</span></figcaption>
+        </figure>
+        <figure class="tile reveal" data-category="places">
+          <button class="tile-btn" type="button" aria-label="Open photo: Where the light gets in">
+            <img src="images/places-04.jpg" data-placeholder="images/placeholders/places-04.svg" alt="Sunlight streaming through a tall arched window" loading="lazy">
+          </button>
+          <figcaption><span class="cap-title">Where the light gets in</span><span class="cap-meta">Old stone church</span></figcaption>
+        </figure>
+        <figure class="tile reveal" data-category="people">
+          <button class="tile-btn" type="button" aria-label="Open photo: A glance back">
+            <img src="images/people-04.jpg" data-placeholder="images/placeholders/people-04.svg" alt="Person glancing over their shoulder on a busy street" loading="lazy">
+          </button>
+          <figcaption><span class="cap-title">A glance back</span><span class="cap-meta">On the street</span></figcaption>
+        </figure>
+        <figure class="tile reveal" data-category="friends">
+          <button class="tile-btn" type="button" aria-label="Open photo: Birthday candles">
+            <img src="images/friends-04.jpg" data-placeholder="images/placeholders/friends-04.svg" alt="Friend blowing out birthday candles while others cheer" loading="lazy">
+          </button>
+          <figcaption><span class="cap-title">Birthday candles</span><span class="cap-meta">Making a wish</span></figcaption>
+        </figure>
+        <figure class="tile reveal" data-category="places">
+          <button class="tile-btn" type="button" aria-label="Open photo: The long road out">
+            <img src="images/places-05.jpg" data-placeholder="images/placeholders/places-05.svg" alt="Winding road through autumn hills" loading="lazy">
+          </button>
+          <figcaption><span class="cap-title">The long road out</span><span class="cap-meta">Gatineau Hills</span></figcaption>
+        </figure>
+        <figure class="tile reveal" data-category="people">
+          <button class="tile-btn" type="button" aria-label="Open photo: Grandma’s smile">
+            <img src="images/people-05.jpg" data-placeholder="images/placeholders/people-05.svg" alt="Older woman smiling warmly at the camera" loading="lazy">
+          </button>
+          <figcaption><span class="cap-title">Grandma’s smile</span><span class="cap-meta">Family visit</span></figcaption>
+        </figure>
+        <figure class="tile reveal" data-category="friends">
+          <button class="tile-btn" type="button" aria-label="Open photo: Us, always">
+            <img src="images/friends-05.jpg" data-placeholder="images/placeholders/friends-05.svg" alt="Group of friends silhouetted against a sunset" loading="lazy">
+          </button>
+          <figcaption><span class="cap-title">Us, always</span><span class="cap-meta">Last night of summer</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about-photo reveal">
+        <img src="images/about.jpg" data-placeholder="images/placeholders/about.svg" alt="Chidinma outdoors with long dark hair, evergreens behind her" loading="lazy">
+      </div>
+      <div class="about-text reveal">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">Hi, I’m Chidinma.</h2>
+        <p class="lead">I’m new to photography, and honestly, that’s part of the magic.</p>
+        <p>I started picking up a camera because I kept noticing things I didn’t want to forget: the way light falls on an ordinary street, the half-second before a friend bursts out laughing, a stranger’s face in a quiet moment.</p>
+        <p>I photograph places, people, and the friends who make my life feel full. I’m based in Ottawa, still learning every single day, and chasing the moments that matter, the small, soft ones most people walk past.</p>
+        <p class="signature">— Chidinma <span>(@takenbyfave)</span></p>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="section-head reveal">
+        <p class="eyebrow">Say hello</p>
+        <h2 id="contact-title">Let’s make something together</h2>
+        <p class="contact-intro">Want to grab a photo walk, swap ideas, or just say hi? I’d love to hear from you.</p>
+      </div>
+
+      <div class="contact-wrap reveal">
+        <ul class="contact-links">
+          <li><span class="label">Email</span><a id="contact-email" href="mailto:favourcharlessidequest@gmail.com">favourcharlessidequest@gmail.com</a></li>
+          <li><span class="label">Instagram</span><a href="https://instagram.com/takenbyfave" target="_blank" rel="noopener">@takenbyfave</a></li>
+          <li class="contact-credit"><span class="label">Credit</span><span>Photographed by Favour Chidinma Charles</span></li>
+          <li><span class="label">Based in</span><span>Ottawa, Canada</span></li>
+        </ul>
+
+        <!-- This form opens the visitor's email app. No server needed. -->
+        <form class="contact-form" id="contact-form" data-email="favourcharlessidequest@gmail.com" novalidate>
+          <label>Your name<input type="text" name="name" autocomplete="name" required></label>
+          <label>Your email<input type="email" name="email" autocomplete="email" required></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button type="submit">Send a note</button>
+          <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-credit">
+      <p class="credit">Photographed by Favour Chidinma Charles</p>
+      <p>© <span id="year">2026</span> Chidinma · <a href="https://instagram.com/takenbyfave" target="_blank" rel="noopener">@takenbyfave</a> · Photographs taken with love in Ottawa</p>
+    </div>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <!-- ========== LIGHTBOX (the full-screen photo viewer) ========== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button class="lb-close" type="button" aria-label="Close">×</button>
+    <button class="lb-prev" type="button" aria-label="Previous photo">‹</button>
+    <figure class="lb-figure">
+      <img class="lb-img" src="" alt="">
+      <figcaption class="lb-caption"><span class="lb-title"></span><span class="lb-meta"></span><span class="lb-count"></span></figcaption>
+    </figure>
+    <button class="lb-next" type="button" aria-label="Next photo">›</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
