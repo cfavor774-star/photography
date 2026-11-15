@@ -216,3 +216,6 @@ body.lb-open { overflow: hidden; }
 .gallery-section .filters { margin-top: 0; }
 .tile { margin-bottom: 1.6rem; }
 .grid[data-view="people"] { gap: 1.6rem; }
+
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.contact-form button:disabled { opacity: .6; cursor: wait; }

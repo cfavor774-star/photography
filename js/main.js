@@ -113,18 +113,26 @@
     startX = null;
   }, { passive: true });
 
-  /* 6. Contact form opens the visitor's email app (no server needed) */
+  /* 6. Contact form: sends through FormSubmit to the site owner's inbox */
   var form = document.getElementById("contact-form");
   var note = document.getElementById("form-note");
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var name = form.name.value.trim(), email = form.email.value.trim(), msg = form.message.value.trim();
-    if (!name || !email || !msg) { note.textContent = "Please fill in your name, email and a little message."; return; }
-    var to = form.getAttribute("data-email");
-    var subject = "Hello from " + name;
-    var body = msg + "\n\n— " + name + " (" + email + ")";
-    window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-    note.textContent = "Your email app should open now. Thank you for writing 🌷";
+    if (form._honey.value) return;
+    if (!name || !email || !msg) { note.textContent = "Please fill in your name, email and message."; return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { note.textContent = "Please enter a valid email address."; return; }
+    var btn = form.querySelector("button[type=submit]");
+    btn.disabled = true; note.textContent = "Sending…";
+    fetch("https://formsubmit.co/ajax/" + form.getAttribute("data-email"), {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({ name: name, email: email, message: msg, _replyto: email, _subject: "New message from your photography site", _template: "table", _captcha: "false" })
+    }).then(function (r) { return r.json(); }).then(function (d) {
+      if (d && (d.success === true || d.success === "true")) { form.reset(); note.textContent = "Thank you. Your message has been sent."; }
+      else { note.textContent = "Sorry, that didn't go through. Please try again or reach out on Instagram."; }
+    }).catch(function () { note.textContent = "Sorry, that didn't go through. Please try again or reach out on Instagram."; })
+      .then(function () { btn.disabled = false; });
   });
 
   document.getElementById("year").textContent = new Date().getFullYear();
